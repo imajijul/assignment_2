@@ -8,7 +8,7 @@ function calculateDifference(a, b){
 const result = calculateDifference(20, 10)
 console.log("Difference: " + result)
 
-// 2. Write a function named isodd that takes one argument and returns true if the number is iddm abd false if it is not.
+// 2. Write a function named isOdd that takes one argument and returns true if the number is odd. and false if it is not.
 // Program-2
 
 function isOdd(number){
@@ -36,14 +36,16 @@ console.log(retult3)
 // 4. Write a function named filterEvenNumbers that takes an array of numbers and returns a new array containing only the even numbers.
 // Program-4
 function filterEvenNumbers(numbers){
-    const even = numbers.filter((number)=> {return number%2 ===0})
+    const even = numbers.filter((number)=> {
+        return number % 2 === 0
+    })
     return even
 }
 
 const Numbers = [11, 30, 39, 10, 99, 23, 41, 102, 70, 45, 80, 9, 35, 52]
 const evenNumbers = filterEvenNumbers(Numbers)
 
-console.log(evenNumbers)
+console.log("Even Numbers: "+ evenNumbers)
 
 // 5. Write a function named sortArrayDescending that takes an array of numbers and returns a new array sorted in descending order.
 // Prograrm-5
@@ -75,7 +77,7 @@ console.log(lowercaseFirstLetter())
 function countVowels(str){
     let vowels = str.match(/[aeiou]/igmd)
 
-     let count =0
+     let count = 0
      for (let char of vowels){
         count +=1
      }
